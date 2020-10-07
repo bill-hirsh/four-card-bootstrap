@@ -76,19 +76,17 @@ header p {
   height: 7.84vh;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 576px) {
 
   body {
     top: 8.5vh;
-    margin-left: auto;
-    margin-right: auto;
     width: 80vw;
     height: 88.5vh;
   }
 
   header {
-    padding-left: 24vw;
-    padding-right: 24vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     height: 20vh;
   }
 
@@ -102,7 +100,7 @@ header p {
 
   header p{
     font-size: 2.22vh;
-    top: 0vh;
+    top: 2vh;
   }
 
   main {
@@ -112,6 +110,77 @@ header p {
   }
 
   .card-columns{
+    column-count: 2;
+    height: 62vh;
+  }
+
+  .card-columns .card{
+    position: relative;
+    margin-bottom: 3.5vh;
+    height: 27.5vh;
+    width: 37.75vw;
+  }
+
+  .card h1 {
+    padding-left: 2vw;
+    font-size: 2.5vh;
+  }
+
+  .card p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 2vh;
+  }
+
+  .icon, .icon img {
+    margin-top: 0.25vw;
+    margin-left: auto;
+    margin-right: 2vw;
+    height: 9vh;
+    width: 4.51vw;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    top: 8.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 88.5vh;
+  }
+
+  header {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    height: 20vh;
+  }
+
+  header h1{
+    font-size: 4.25vh;
+  }
+
+  header h2{
+    font-size: 4.33vh;
+  }
+
+  header p{
+    padding-left: 7vw;
+    padding-right: 7vw;
+    font-size: 2.22vh;
+    top: 2vh;
+  }
+
+  main {
+    top: 6vh;
+    height: 62vh;
+    width: 80vw;
+  }
+
+  .card-columns{
+    column-count: 3;
     height: 62vh;
   }
 
